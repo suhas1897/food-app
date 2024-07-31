@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* .h11 {
+  color: #dec3b0;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+} */
+
+.h11 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 60px;
+  color: #dec3b0;
+  text-align: center;   
+  display: flex;
+  justify-content: center; /* Center align in flexbox */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .h11 {
+    font-size: 40px; /* Adjust font size for mobile */
+    text-align: center; /* Ensure text is centered */
+    padding: 10px; /* Add padding for better spacing */
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  
+}
+.logo {
+  /* background-color: black; */
+  height: 80px;
+  width: 75px;
+  border-radius: 50%;
+  margin-top: 1.2%;
+  margin-right: 10px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .logo {
+    height: 60px; /* Adjust height for mobile */
+    width: 60px; /* Adjust width for mobile */
+    margin-top: 5px; /* Adjust top margin for mobile */
+    margin-right: 5px; /* Adjust right margin for mobile */
+  }
+}
+
+.drop {
+  display: flex;
+  flex-direction: row;
+
+}
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-around;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  
+}
+.meal {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .text {
+    flex-direction: column; /* Change to column layout for mobile */
+    
+    gap: 2px;
+
+  }
+  .meal {
+    bottom: 5px;
+    align-items: center;
+  }
+
+  
+}

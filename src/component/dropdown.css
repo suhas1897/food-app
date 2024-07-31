@@ -1,0 +1,65 @@
+.drop1 {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+}
+
+.drop2 {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130%;
+    padding: 0 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.drop3 {
+    background-color: #76463c;
+    position: absolute;
+    top: 75px; /* Adjusted to position exactly below the .drop2 */
+    width: 117%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    left: 11px;
+    text-decoration: double;
+}
+
+.drop3 div {
+    cursor: pointer;
+    text-align: center;
+}
+
+.drop3 div:last-child {
+    border-bottom: none;
+}
+
+.drop3 div:hover {
+    background-color: #f0f0f0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .drop1 {
+        width: 100%; /* Adjust width for mobile view */
+    }
+
+    .drop2 {
+        width: 100%; /* Adjust width for mobile view */
+    }
+
+    .drop3 {
+        width: 100%; /* Adjust width for mobile view */
+        left: 0; /* Center align for mobile view */
+        top: 100%; /* Position directly below drop2 */
+    }
+
+    .drop3 div {
+        padding: 10px; /* Add padding for touch targets on mobile */
+        border-bottom: 1px solid #e0e0e0; /* Add separator for items */
+    }
+}

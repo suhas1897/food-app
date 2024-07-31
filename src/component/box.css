@@ -1,0 +1,71 @@
+.styled-box-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure the boxes wrap when they don't fit */
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .styled-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: auto;
+    width: auto;  */
+    padding: 10px; /* Reduced padding */
+    box-sizing: border-box;
+    margin: 10px; /* Added margin for spacing between multiple boxes */
+    /* background-color: black; */
+    
+  }
+  
+  .box {
+    background-color: #76463c; 
+    border-radius: 10px;
+    padding: 15px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    /* width: max-content; */
+    width: 170px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .text {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 40px; /* Reduced font size */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .styled-box-container {
+      flex-direction: column; /* Change to column layout for mobile */
+      gap: 1px;
+    }
+  
+    .box {
+      /* width: 100%; */
+      padding: 10px; /* Adjusted padding for mobile */
+      
+    }
+  
+    .text {
+      font-size: 30px; /* Reduced font size for mobile */
+    }
+  }
+  
